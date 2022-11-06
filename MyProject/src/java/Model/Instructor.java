@@ -2,46 +2,46 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model;
+package Model;
 
 import java.sql.Date;
 
 /**
  *
- * @author dell
+ * @author ASUS G731G
  */
-public class Lecture {
-    private String lecture_id;
-    private String lecture_name;
+public class Instructor {
+    private String instructor_id;
+    private String name;
     private Date dob;
     private boolean gender;
     private Account account;
 
-    public Lecture() {
+    public Instructor() {
     }
 
-    public Lecture(String lecture_id, String lecture_name, Date dob, boolean gender, Account account) {
-        this.lecture_id = lecture_id;
-        this.lecture_name = lecture_name;
+    public Instructor(String instructor_id, String name, Date dob, boolean gender, Account account) {
+        this.instructor_id = instructor_id;
+        this.name = name;
         this.dob = dob;
         this.gender = gender;
         this.account = account;
     }
 
-    public String getLecture_id() {
-        return lecture_id;
+    public String getInstructor_id() {
+        return instructor_id;
     }
 
-    public void setLecture_id(String lecture_id) {
-        this.lecture_id = lecture_id;
+    public void setInstructor_id(String instructor_id) {
+        this.instructor_id = instructor_id;
     }
 
-    public String getLecture_name() {
-        return lecture_name;
+    public String getName() {
+        return name;
     }
 
-    public void setLecture_name(String lecture_name) {
-        this.lecture_name = lecture_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Date getDob() {
@@ -69,5 +69,6 @@ public class Lecture {
     }
     
     
+
     
 }
